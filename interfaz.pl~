@@ -1,0 +1,10 @@
+fechaevento():-
+    write("Digite la fecha: "),
+    read(Fecha),
+    string_tokens(`the file log.txt is 3.4 pages. or so.`, X).,
+    write(S).
+
+
+
+tokens(Fecha, S).
+

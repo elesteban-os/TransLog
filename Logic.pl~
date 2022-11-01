@@ -1,15 +1,7 @@
 % De ingles a espanol el genero importa.
-
-% General.
 oracionEnEs(S0, S, T0, T):-
     sintagma_nominal(S0, S1, T0, T1, Num, Gen, Per),
     sintagma_verbal(S1, S, T1, T, Num2, Gen2, Per2).
-
-% Nombres propios
-oracionEnEs(S0, S, T0, T):-
-    nombrePropio(S0, S1, T0, T1),
-    sintagma_verbal(S1, S, T1, T, Num2, Gen2, Per2).
-
 
 % ----------------------------------------
 
@@ -24,7 +16,7 @@ oracionEsEn(S0, S, T0, T):-
 oracionEsEn(S0, S, T0, T):-
     frase(S0, S, T0, T), !.
 
-% Solo saludos o despedidas **
+% Solo saludos o despedidas
 oracionEsEn(S0, S, T0, T):-
     frase(S0, S, T0, T), !.
 
