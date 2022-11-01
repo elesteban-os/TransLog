@@ -61,13 +61,21 @@ frase([como, estas|S], S, [how, are, you|T], T).
 % determinante(numero, genero, persona).
 determinante([el|S], S, [the|T], T, singular, masculino, tercera).
 determinante([la|S], S, [the|T], T, singular, femenino, tercera).
+determinante([al|S], S, [to, the|T], T, singular, femenino, tercera).
+determinante([a|S], S, [to|T], T, singular, femenino, tercera).
+
+
 
 % nombre(numero, genero).
 nombre([hombre|S], S, [man|T], T, singular, masculino).
 nombre([mujer|S], S, [woman|T], T, singular, femenino).
 nombre([manzana|S], S, [apple|T], T, singular, femenino).
+nombre([baño|S], S, [bathroom|T], T, singular, femenino).
+
 nombre([X|S], S, [X|T], T, propio, propio).
 
 % verbo(numero, persona).
 verbo([come|S], S, [eats|T], T, singular, tercera).
+verbo([voy|S], S, [go|T], T, singular, tercera).
+
 

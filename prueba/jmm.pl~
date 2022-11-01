@@ -56,7 +56,7 @@ saludo([hola|S], S, [hello|T], T).
 despedida([adios|S], S, [bye|T], T).
 
 % frases predeterminadas
-frase([como, esta|S], S, [how, are, you|T], T).
+frase([como, estas|S], S, [how, are, you|T], T).
 
 % determinante(numero, genero, persona).
 determinante([el|S], S, [the|T], T, singular, masculino, tercera).
